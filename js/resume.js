@@ -15,6 +15,8 @@
         }
     });
 
+
+
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {
         $('.navbar-collapse').collapse('hide');
@@ -27,4 +29,22 @@
 
     $('.carousel').carousel();
 
+    $('#circle1').circleProgress({
+        value: 1,
+        size: 120,
+        thickness: 5,
+        fill: {
+          gradient: ["red", "orange"]
+        },
+        startAngle: -Math.PI / 6 * 3
+    });
+    $('#circle2').circleProgress({
+        value: 0.75,
+        size: 120,
+        thickness: 5,
+        fill: {
+          gradient: ["red", "orange"]
+        },
+        startAngle: -Math.PI / 6 * 3
+    });
 })(jQuery); // End of use strict

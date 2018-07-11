@@ -19,6 +19,13 @@ var banner = ['/*!\n',
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
+    
+    //jquery-circle-progress
+    gulp.src([
+        './node_modules/jquery-circle-progress/dist/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/jquery-circle-progress'))
+    .pipe(gulp.dest('./dist/vendor/jquery-circle-progress'));
 
     // Bootstrap
     gulp.src([

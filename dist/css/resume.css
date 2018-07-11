@@ -130,6 +130,27 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+.circle-image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.circle-image img {
+  width: 110px;
+  height: 110px;
+  vertical-align: top;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.circle-image canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .bg-primary {
   background-color: #BD5D38 !important;
 }
